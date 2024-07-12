@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nearestblood"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/action_menu_image535"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="3dp"
+        android:visibility="visible"
+        android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/action_menu_image"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:clickable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:src="@drawable/baseline_person_24" />
+
+
+                <ImageView
+                    android:id="@+id/shareId"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:src="@drawable/shareicon" />
+
+
+                <TextView
+                    android:id="@+id/homeusername"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="username" />
+
+                <TextView
+                    android:id="@+id/apptitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
+                    android:text="QuickResQ"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/relatv1"
+        >
+
+        <Button
+            android:id="@+id/buttnId1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="find All Doner"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/orange"
+            app:cornerRadius="5dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buttnId1"
+
+            >
+
+
+
+            <GridView
+                android:visibility="visible"
+                android:id="@+id/recyclerview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="1"
+                />
+            <!-- android:scaleType="fitXY" -->
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
