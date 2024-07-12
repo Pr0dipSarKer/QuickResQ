@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitReport"
+    android:gravity="center"
+    android:background="@color/white">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emergency Request For Help:"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/name21"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter your name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/name22"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter your phone "
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="5dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/name23"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="write details"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/locaation1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="enter your location"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custome_edittext"
+                android:padding="5dp"
+                />
+
+
+            <!-- Button Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <!-- Confirm Order Button -->
+                <Button
+                    android:id="@+id/confirmOrderButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Submit"/>
+
+                <!-- Delete Order Button -->
+                <Button
+                    android:id="@+id/deleteOrderButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="cancel"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+       
+        
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="548dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
